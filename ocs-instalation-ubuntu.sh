@@ -1,0 +1,14 @@
+sudo apt install apache2;
+sudo apt update;
+sudo apt install mariadb-server;
+sudo apt install php7.2;
+sudo apt install libxml-simple-perl libdbi-perl libdbd-mysql-perl libapache-dbi-perl libnet-ip-perl libsoap-lite-perl libarchive-zip-perl make build-essential;
+cpan install XML::Entities;
+sudo apt install php-pclzip make build-essential libdbd-mysql-perl libnet-ip-perl libxml-simple-perl php php-mbstring php-soap php-mysql php-curl php-xml php-zip;
+sudo apt install php-gd;
+wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.6/OCSNG_UNIX_SERVER_2.6.tar.gz;
+tar -xvzf OCSNG_UNIX_SERVER_2.6.tar.gz;
+sudo mkdir /etc/ocsinventory-server && sudo mkdir /etc/ocsinventory-server/plugins && sudo mkdir /etc/ocsinventory-server/perl;
+cd OCSNG_UNIX_SERVER_2.6;
+sudo sh setup.sh;
+sudo apt update;
